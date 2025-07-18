@@ -1,73 +1,108 @@
-# Welcome to your Lovable project
+# 🎓 IC Future School
 
-## Project info
+Welcome to the IC Future School website project! This is a modern, responsive, and beginner-friendly school website built with React, Vite, and Tailwind CSS. It showcases the school's programs, values, admissions process, and more, providing a great user experience for students, parents, and staff.
 
-**URL**: https://lovable.dev/projects/a315c167-deef-4208-bd03-ef738f640265
+---
 
-## How can I edit this code?
+## ✨ Features
 
-There are several ways of editing your application.
+- Responsive design for all devices 📱💻
+- Beautiful landing page with school highlights
+- About, Programs, Gallery, Testimonials, and Contact pages
+- Easy navigation and smooth user experience
+- Interactive forms and quick actions
+- Modern UI with consistent branding
+- Accessible and beginner-friendly code
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a315c167-deef-4208-bd03-ef738f640265) and start prompting.
+## 🛠️ Technologies Used
 
-Changes made via Lovable will be committed automatically to this repo.
+- [React](https://react.dev/) ⚛️
+- [Vite](https://vitejs.dev/) ⚡
+- [Tailwind CSS](https://tailwindcss.com/) 🌈
+- [shadcn/ui](https://ui.shadcn.com/) 🧩
+- [Lucide Icons](https://lucide.dev/) 🎨
+- [React Router](https://reactrouter.com/) 🚦
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🚀 Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
+### 1. Clone the repository
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+git clone https://github.com/isamch/IC-Future-School.git
+cd IC-Future-School
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 2. Install dependencies
+```sh
+npm install
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### 3. Start the development server
+```sh
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The app will be available at [http://localhost:8080](http://localhost:8080) by default.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 📁 Project Structure
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```
+├── public/ or root
+│   └── favicon.svg         # Site favicon (Graduation Cap)
+├── src/
+│   ├── components/         # Reusable UI components
+│   ├── pages/              # Main pages (Home, About, Programs, etc.)
+│   ├── App.tsx             # Main app component
+│   ├── main.tsx            # Entry point
+│   └── index.css           # Tailwind and global styles
+├── index.html              # Main HTML file
+├── package.json            # Project metadata and scripts
+└── README.md               # Project documentation
+```
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 📝 Customization
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- All content, images, and colors can be easily updated in the `src/pages` and `src/components` folders.
+- The project is designed for easy editing and extension. No advanced patterns or complex state management are used.
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/a315c167-deef-4208-bd03-ef738f640265) and click on Share -> Publish.
+## 💡 Tips for Beginners
 
-## Can I connect a custom domain to my Lovable project?
+- All code is written in a clear, simple, and modular way.
+- Components and functions are small and focused.
+- Comments are included for any non-obvious logic.
+- You can use any code editor (like VS Code) for editing.
+- For styling, just edit the Tailwind classes in the JSX.
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 📦 Deployment
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+You can deploy this project to any static hosting service (like Vercel, Netlify, or GitHub Pages) after running:
+```sh
+npm run build
+```
+
+---
+
+## 📣 Credits
+
+- UI inspired by modern school websites and built with open-source tools.
+- Icons by [Lucide](https://lucide.dev/).
+- UI components by [shadcn/ui](https://ui.shadcn.com/).
+
+---
+
+## 🏫 IC Future School — Inspiring Bright Futures!
+
+---
+
+> _This project is open source and ready for you to use, learn from, and improve!_
