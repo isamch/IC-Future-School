@@ -16,6 +16,7 @@ import {
   Users,
   GraduationCap,
 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -26,6 +27,8 @@ const Contact = () => {
     inquiryType: "",
     message: "",
   });
+
+  const navigate = useNavigate();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -264,15 +267,15 @@ const Contact = () => {
                   <CardTitle className="text-blue-900">Quick Actions</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
-                  <Button variant="outline" className="w-full justify-start">
+                  <Button variant="outline" className="w-full justify-start" onClick={() => navigate('/contact')}>
                     <Calendar className="mr-2 h-4 w-4" />
                     Schedule a Campus Tour
                   </Button>
-                  <Button variant="outline" className="w-full justify-start">
+                  <Button variant="outline" className="w-full justify-start" onClick={() => navigate('/about')}>
                     <GraduationCap className="mr-2 h-4 w-4" />
                     Request Information Packet
                   </Button>
-                  <Button variant="outline" className="w-full justify-start">
+                  <Button variant="outline" className="w-full justify-start" onClick={() => navigate('/admissions')}>
                     <Users className="mr-2 h-4 w-4" />
                     Speak with Admissions
                   </Button>

@@ -2,6 +2,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Star, Quote } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 
 const Testimonials = () => {
   const testimonials = [
@@ -245,12 +247,16 @@ const Testimonials = () => {
             Become part of a community that values excellence, character, and the individual potential of every child.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-3 rounded-lg font-semibold transition-colors">
-              Schedule a Visit
-            </button>
-            <button className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 rounded-lg font-semibold transition-colors">
-              Start Application
-            </button>
+            <Link to="/contact">
+              <Button className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-3 rounded-lg font-semibold transition-colors">
+                Schedule a Visit
+              </Button>
+            </Link>
+            <Link to="/admissions">
+              <Button className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 rounded-lg font-semibold transition-colors">
+                Start Application
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
